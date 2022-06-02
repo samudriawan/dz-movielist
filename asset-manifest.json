@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dz-movielist/static/css/main.91599090.css",
+    "main.js": "/dz-movielist/static/js/main.2ca9d2f8.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/dz-movielist/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/dz-movielist/index.html",
+    "main.91599090.css.map": "/dz-movielist/static/css/main.91599090.css.map",
+    "main.2ca9d2f8.js.map": "/dz-movielist/static/js/main.2ca9d2f8.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/dz-movielist/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91599090.css",
+    "static/js/main.2ca9d2f8.js"
+  ]
+}
