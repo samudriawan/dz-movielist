@@ -59,7 +59,7 @@ function App() {
 	console.log(`page state App.js: ${page}`);
 
 	return (
-		<Router>
+		<Router basename="/dz-movielist">
 			<Navbar onSearchClick={searchHandle} />
 			<Routes>
 				<Route path="/" element={<Home fetchState={fetchApi} searchText={searchText} onPageClick={onPageClick} />}></Route>
