@@ -6,7 +6,7 @@ $primary-clr: $primary-color;
 main {
 	width: 100%;
 
-	header {
+	.header {
 		width: 100%;
 		margin-bottom: 2rem;
 		border-bottom: 1px solid blue;
@@ -184,6 +184,7 @@ main {
 }
 
 .movie-section {
+	position: relative;
 	@media screen and (min-width: 768px) {
 		gap: 2rem 1rem;
 		grid-template-columns: repeat(5, 1fr);
@@ -226,4 +227,16 @@ main {
 	.active {
 		background-color: $primary-clr;
 	}
+}
+
+.loading {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
 }
