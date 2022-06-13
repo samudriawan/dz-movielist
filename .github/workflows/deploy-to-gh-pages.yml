@@ -26,7 +26,7 @@ jobs:
       - name: ident
         run: |
           git config --global user.email "samudriawan@yahoo.co.id"
-          git config --global user.name "Dyota"
+          git config --global user.name "samudriawan"
 
       - name: Build
         run: |
