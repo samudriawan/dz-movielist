@@ -23,6 +23,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: ident
+        run: |
+          git config --global user.email "samudriawan@yahoo.co.id"
+          git config --global user.name "Dyota"
+
       - name: Build
         run: |
           npm install
