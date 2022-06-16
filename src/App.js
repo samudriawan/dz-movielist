@@ -37,6 +37,7 @@ function App() {
 		e.preventDefault();
 		try {
 			setSearchText(searchText);
+			setPage(1);
 			// fetchHandle();
 			console.log(searchText);
 		} catch (error) {
@@ -45,7 +46,9 @@ function App() {
 	}
 
 	function onPageClick(condition) {
+		const maxPage = Math.ceil(fetchApi.totalResults / 10);
 		if (condition === 'next') {
+			if (maxPage === page) return;
 			setPage(page + 1);
 		}
 		if (condition === 'prev') {
@@ -57,6 +60,7 @@ function App() {
 		console.log(`onClick App.js: ${condition}`);
 	}
 	console.log(`page state App.js: ${page}`);
+	console.log(`page state App.js: ${Math.ceil(fetchApi.totalResults / 10)}`);
 
 	return (
 		<Router basename="/dz-movielist">
