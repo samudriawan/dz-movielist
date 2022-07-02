@@ -31,14 +31,26 @@ export function Navbar(props) {
 					DZ Movie List
 				</Link>
 				<div className="navbar-toggler">
-					<button className="toggler-btn white" aria-label="search" onClick={() => toggleMenuHandle()}>
+					<button
+						className="toggler-btn white"
+						aria-label="search"
+						onClick={() => toggleMenuHandle()}
+					>
 						<HiSearch className="icon" />
 					</button>
 				</div>
 				<ul className="nav-list">
 					<li className="nav-item">
-						<form onSubmit={(e) => onSearchClick(e, searchInput)} className="search-bar top">
-							<input type="text" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} placeholder="Search for movie..." />
+						<form
+							onSubmit={(e) => onSearchClick(e, searchInput)}
+							className="search-bar top"
+						>
+							<input
+								type="text"
+								value={searchInput}
+								onChange={(e) => setSearchInput(e.target.value)}
+								placeholder="Search for movie..."
+							/>
 							<button type="submit" className="search" aria-label="search">
 								<HiSearch size={'1.3rem'} />
 							</button>
@@ -47,8 +59,16 @@ export function Navbar(props) {
 				</ul>
 			</nav>
 			<div className=" navbar-collapse" id="navbar-menu" ref={searchBar}>
-				<form onSubmit={(e) => onSearchClick(e, searchInput)} className="search-bar">
-					<input type="text" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} placeholder="Search for movie..." />
+				<form
+					onSubmit={(e) => onSearchClick(e, searchInput)}
+					className="search-bar"
+				>
+					<input
+						type="text"
+						value={searchInput}
+						onChange={(e) => setSearchInput(e.target.value)}
+						placeholder="Search for movie..."
+					/>
 					<button type="submit" className="search" aria-label="search">
 						<HiSearch size={'1.3rem'} />
 					</button>

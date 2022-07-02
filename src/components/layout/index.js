@@ -1,4 +1,2 @@
-import { Navbar } from './Navbar/Navbar.jsx';
-import { Footer } from './Footer/Footer.jsx';
-
-export { Navbar, Footer };
+export * from './Navbar/Navbar.jsx';
+export * from './Footer/Footer.jsx';
