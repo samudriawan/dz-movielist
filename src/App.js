@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar, Footer } from './components/layout';
-import { Home } from './components/pages';
+import { Home, Movies } from './components/pages';
 
 function App() {
 	const [fetchApi, setFetchApi] = useState({
@@ -67,6 +67,7 @@ function App() {
 			<Navbar onSearchClick={searchHandle} />
 			<Routes>
 				<Route path="/" element={<Home fetchState={fetchApi} searchText={searchText} onPageClick={onPageClick} />}></Route>
+				<Route path="/movies/:title" element={<Movies fetchState={fetchApi} />}></Route>
 			</Routes>
 			<Footer />
 		</Router>

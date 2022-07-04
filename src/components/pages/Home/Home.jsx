@@ -26,7 +26,7 @@ export function Home(props) {
 					<div className="row movie-section">
 						{fetchState.loading || fetchState.movie === undefined || fetchState.movie.length === 0 ? 
 						<h4 className="loading">Loading...</h4> 
-						: fetchState.movie.map((data) => <MovieCard data={data} />)}
+						: fetchState.movie.map((data) => <MovieCard data={data} key={data.index} />)}
 					</div>
 					<div className="row">
 						<Pagination onPageClick={onPageClick} />

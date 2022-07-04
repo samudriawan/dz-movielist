@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-function MovieCard({ data }) {
+function MovieCard({ data, key }) {
 	return (
-		<div className="movie-wrap" key={data.index}>
+		<div className="movie-wrap" key={key}>
 			<Link
 				to={`/movies/${data.Title.toLowerCase()
 					.replace(/[^\w\s]/g, '')
